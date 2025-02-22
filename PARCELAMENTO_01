@@ -1,0 +1,11 @@
+SET SERVEROUTPUT ON;
+
+DECLARE
+    VALORCARRO NUMBER := &DIGITE_VALOR_TOTAL;
+   
+BEGIN
+    dbms_output.put_line('O VALOR A VISTA É: R$' || VALORCARRO);
+    dbms_output.put_line('O VALOR DAS PARCELAS SÃO: R$' || (VALORCARRO*1.03)/10);
+    dbms_output.put_line('O VALOR TOTAL FINANCIADO: R$' || VALORCARRO*1.03);
+    
+END;
