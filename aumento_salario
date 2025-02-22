@@ -1,0 +1,8 @@
+SET SERVEROUTPUT ON;
+
+DECLARE
+    SALARIO NUMBER := &VALOR;
+   
+BEGIN
+    dbms_output.put_line('O NOVO SALÁRIO É: R$' || salario*1.25);
+END;
