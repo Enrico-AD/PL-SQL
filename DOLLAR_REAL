@@ -1,0 +1,8 @@
+SET SERVEROUTPUT ON;
+
+DECLARE
+    DOLLAR NUMBER := &VALOR;
+   
+BEGIN
+    dbms_output.put_line('O VALOR CONVERTIDO É: R$' || DOLLAR*5.73);
+END;
